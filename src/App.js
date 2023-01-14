@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='grid grid-flow-row'>
+    <div>
     <Nav/>
     <Header/>
     <Main/>
