@@ -1,7 +1,7 @@
 import React from "react";
 import foodLogo from '../assets/restaurantfood.jpg'
 
-const Header = () => {
+const Hero = () => {
 
     return (
         <section className="bg-teal-900 grid grid-cols-12 gap-4 flex-row-reverse">
@@ -24,4 +24,4 @@ const Header = () => {
         </section>
     )
 }
-export default Header;
+export default Hero;

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../assets/Logo.svg'
+import { Link } from "react-router-dom";
 
 export default function Nav() {
     return (
@@ -17,29 +18,29 @@ export default function Nav() {
                         <ul
                             className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 dark:border-gray-700">
                             <li>
-                                <a href="#/"
+                                <Link to="/"
                                     className="block py-2 pl-3 pr-4 text-black hover:text-blue-500"
-                                    aria-current="page">Home</a>
+                                    aria-current="page">Home</Link>
                             </li>
                             <li>
-                                <a href="#/about"
-                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">About</a>
+                                <Link to="/about"
+                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">About</Link>
                             </li>
                             <li>
-                                <a href="#/menu"
-                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Menu</a>
+                                <Link to="/menu"
+                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Menu</Link>
                             </li>
                             <li>
-                                <a href="#/reservations"
-                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Reservations</a>
+                                <Link to="/reservations"
+                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Reservations</Link>
                             </li>
                             <li>
-                                <a href="#/order"
-                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Order Online</a>
+                                <Link to="/order"
+                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Order Online</Link>
                             </li>
                             <li>
-                                <a href="#/login"
-                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Login</a>
+                                <Link to="/login"
+                                    className="block py-2 pl-3 pr-4 text-black hover:text-blue-500">Login</Link>
                             </li>
                         </ul>
                     </div>
