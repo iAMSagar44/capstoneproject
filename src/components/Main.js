@@ -21,21 +21,21 @@ const Main = () => {
                     </div>
                     <div>
                     </div>
-                    <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                    <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:space-y-0">
                         <div className="max-w-sm bg-slate-100 border border-gray-200 rounded-2xl shadow-md">
                             <img className="rounded-t-lg" src={image2} alt="Greek Salad" />
-                            <h3 className="mb-2 text-xl font-bold">Greek Salad</h3>
-                            <p className="text-black">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                            <h3 className="m-2 text-xl font-bold">Greek Salad</h3>
+                            <p className="text-black m-2">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
                         </div>
                         <div className="max-w-sm bg-slate-100 border border-gray-200 rounded-2xl shadow-md">
                             <img className="rounded-t-lg" src={image1} alt="Bruchetta" />
-                            <h3 className="mb-2 text-xl font-bold">Bruchetta</h3>
-                            <p className="text-black">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. </p>
+                            <h3 className="m-2 text-xl font-bold">Bruchetta</h3>
+                            <p className="text-black m-2">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. </p>
                         </div>
                         <div className="max-w-sm bg-slate-100 border border-gray-200 rounded-2xl shadow-md">
                             <img className="rounded-t-lg h-60 w-full" src={image3} alt="Lemon Dessert" />
-                            <h3 className="mb-2 text-xl font-bold">Lemon Dessert</h3>
-                            <p className="text-black">This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
+                            <h3 className="m-2 text-xl font-bold">Lemon Dessert</h3>
+                            <p className="text-black m-2">This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
                         </div>
                     </div>
                 </div>
