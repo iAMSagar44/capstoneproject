@@ -37,7 +37,7 @@ const Footer = () => {
                         <h2 className="mb-6 text-sm font-semibold uppercase dark:text-black">Contact</h2>
                         <ul className="text-gray-600 dark:text-gray-800">
                             <li>
-                                <a href="#/Address" className="hover:underline ">Adress</a>
+                                <a href="#/Address" className="hover:underline ">Address</a>
                             </li>
                             <li>
                                 <a href="#/phone" className="hover:underline">Phone Number</a>

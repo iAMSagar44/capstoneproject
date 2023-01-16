@@ -1,14 +1,15 @@
 import React from "react";
 import Footer from "./Footer";
+import BookingForm from "./BookingForm";
 
-const Bookingpage = () => {
+const BookingPage = () => {
     return (
-        <>
-            <p>Booking page - to be built</p>
+        <div>
+            <BookingForm />
             <Footer />
-        </>
+        </div>
     )
 
 }
 
-export default Bookingpage;
+export default BookingPage;
