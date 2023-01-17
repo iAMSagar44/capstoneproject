@@ -15,7 +15,7 @@ const BookingForm = () => {
                             <div>
                                 <label htmlFor="date" className="block mb-2 text-sm font-medium text-gray-900">Date</label>
                                 <input type="date" name="date" id="date" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 
-                                        focus:border-primary-600 block w-full p-2.5" placeholder="Product brand"/>
+                                        focus:border-primary-600 block w-full p-2.5"/>
                             </div>
                             <div>
                                 <label htmlFor="category" className="block mb-2 text-sm font-medium text-gray-900">Choose Time</label>
