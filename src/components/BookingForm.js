@@ -1,11 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useFormik } from "formik";
-import { submitAPI } from "../stub/stubAPI";
+import { fetchAPI, submitAPI } from "../stub/stubAPI";
 
 const BookingForm = () => {
 
-    const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
+    const [availableTimes, setAvailableTimes] = useState([]);
+    const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
 
     const formik = useFormik({
         initialValues: {
@@ -29,6 +30,23 @@ const BookingForm = () => {
         }
     })
 
+    function handleDateChange(e) {
+        setDate(e.target.value);
+    }
+
+    function updateAvailableTime(date) {
+        fetchAPI(date)
+                .then((response) => {
+                    console.log("Inside the update time func call", response);
+                    setAvailableTimes(response);
+                })
+    }
+
+    useEffect(() => {
+        console.log("Inside the useEffect call", date);
+        updateAvailableTime(new Date(date));
+    }, [date])
+
     return (
         <>
             <section className="bg-white">
@@ -40,8 +58,8 @@ const BookingForm = () => {
                                 <label htmlFor="date" className="block mb-2 text-sm font-medium text-gray-900">Date</label>
                                 <input type="date" name="date" id="date" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 
                                         focus:border-primary-600 block w-full p-2.5"
-                                    value={formik.values.date}
-                                    onChange={formik.handleChange} />
+                                    value={date}
+                                    onChange={handleDateChange} />
                             </div>
                             <div>
                                 <label htmlFor="time" className="block mb-2 text-sm font-medium text-gray-900">Choose Time</label>
