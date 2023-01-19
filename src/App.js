@@ -18,9 +18,6 @@ function App() {
         <Route path="/order" element={<Main />} />
         <Route path="/login" element={<Footer />} />
       </Routes>
-      {/* <Hero />
-      <Main />
-      <Footer /> */}
     </>
   );
 }

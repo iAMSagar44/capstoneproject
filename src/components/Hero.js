@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const Hero = () => {
     const navigate = useNavigate();
     const handleButtonClick = () => {
-        console.log("In button click");
         navigate('/reservations');
     }
 
