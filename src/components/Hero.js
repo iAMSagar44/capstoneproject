@@ -25,7 +25,7 @@ const Hero = () => {
 
                     </div>
                     <div className="md:w-1/3 lg:pt-5 md:pt-2 relative hidden md:block">
-                        <img className="aspect-square lg:h-2/5 lg:w-auto object-cover rounded-lg flex-shrink-0" src={foodLogo} alt="" />
+                        <img className="aspect-square lg:h-64 lg:w-auto object-cover rounded-lg" src={foodLogo} alt="" />
                     </div>
                 </div>
             </section>
