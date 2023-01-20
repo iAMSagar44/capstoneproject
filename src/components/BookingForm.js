@@ -12,29 +12,29 @@ const BookingForm = () => {
 
     const formik = useFormik({
         initialValues: {
-            date: new Date().toISOString().slice(0, 10),
+            date: date,
             time: '',
             occasion: '',
             guests: 1
         },
         onSubmit: (values, actions) => {
-            //alert(JSON.stringify(values, null, 2));
             submitAPI(values)
                 .then((response) => {
-                    console.log(response);
+                    console.log(values, "===========", response);
                     actions.resetForm({
                         date: new Date().toISOString().slice(0, 10),
                         time: '',
                         occasion: '',
                         guests: 1
                     })
-                    //navigate('/confirmation');
                     setShowModal(true);
+                    setDate(new Date().toISOString().slice(0, 10));
                 })
         }
     })
 
     function handleDateChange(e) {
+        formik.values.date = e.target.value;
         setDate(e.target.value);
     }
 
